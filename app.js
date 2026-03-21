@@ -36,8 +36,3 @@ form.addEventListener("submit", function(event) {
 
     console.log({name, email, phone, dob, gender, course});
 });
-
-
-// let sports = document.createElement("div");
-// sports.setAttribute("class","form-group");
-// form.appendChild(sports);
