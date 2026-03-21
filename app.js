@@ -10,10 +10,10 @@ form.addEventListener("submit", function(event) {
     let dob = document.getElementById("dob").value;
     let gender = document.getElementById("gender").value;
     let course = document.getElementById("course").value;
-    let spo = document.getElementById("sports").value.trim();
+   
 
     // validation
-    if (name === "" || email === "" || phone === "" || dob === "" || gender === "" || course === "" || spo === "") {
+    if (name === "" || email === "" || phone === "" || dob === "" || gender === "" || course === "") {
         alert("Please fill all fields ❗");
         return;
     }
@@ -34,5 +34,10 @@ form.addEventListener("submit", function(event) {
     document.getElementById("output").innerText =
         "✅ Welcome " + name + "! Your registration is successful.";
 
-    console.log({name, email, phone, dob, gender, course, spo});
+    console.log({name, email, phone, dob, gender, course});
 });
+
+
+// let sports = document.createElement("div");
+// sports.setAttribute("class","form-group");
+// form.appendChild(sports);
