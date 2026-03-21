@@ -40,7 +40,7 @@ form.addEventListener("submit", function(event) {
 let btn2 = document.querySelector("button");
 
 btn2.addEventListener("click", function (){
-    console.log(this.innerText)
+    alert("The form is submitted!")
 });
 
 
@@ -53,3 +53,9 @@ input.addEventListener("keydown",function (){
 input.addEventListener("keyup",function (){
     console.log("the key was realesed!")
 });
+//para color changes when u click after filling the form
+let pera1 = document.querySelector("p");
+
+pera1.addEventListener("click", function(){
+    console.log(this.style.color = "red");
+})
