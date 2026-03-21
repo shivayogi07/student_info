@@ -40,7 +40,16 @@ form.addEventListener("submit", function(event) {
 let btn2 = document.querySelector("button");
 
 btn2.addEventListener("click", function (){
-    console.log("the form got submited successful")
+    console.log(this.innerText)
 });
 
 
+let input = document.querySelector("input");
+
+input.addEventListener("keydown",function (){
+    console.log("the key was pressed!")
+});
+
+input.addEventListener("keyup",function (){
+    console.log("the key was realesed!")
+});
