@@ -36,3 +36,9 @@ form.addEventListener("submit", function(event) {
 
     console.log({name, email, phone, dob, gender, course});
 });
+// Adding event listner
+let btn2 = document.querySelector("button");
+
+btn2.addEventListener("click", function (){
+    console.log("the form got submited successful")
+});
