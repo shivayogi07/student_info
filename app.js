@@ -53,9 +53,13 @@ input.addEventListener("keydown",function (){
 input.addEventListener("keyup",function (){
     console.log("the key was realesed!")
 });
+
+
 //para color changes when u click after filling the form
 let pera1 = document.querySelector("p");
 
 pera1.addEventListener("click", function(){
     console.log(this.style.color = "red");
+    console.log("you changed the color my clicking the para after filling the form")
 })
+
