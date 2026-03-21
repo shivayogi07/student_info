@@ -42,3 +42,5 @@ let btn2 = document.querySelector("button");
 btn2.addEventListener("click", function (){
     console.log("the form got submited successful")
 });
+
+
