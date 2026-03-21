@@ -10,10 +10,11 @@ form.addEventListener("submit", function(event) {
     let dob = document.getElementById("dob").value;
     let gender = document.getElementById("gender").value;
     let course = document.getElementById("course").value;
+    let skill = document.getElementById("skill").value.trim();
    
 
     // validation
-    if (name === "" || email === "" || phone === "" || dob === "" || gender === "" || course === "") {
+    if (name === "" || email === "" || phone === "" || dob === "" || gender === "" || course === "" || skill === "") {
         alert("Please fill all fields ❗");
         return;
     }
@@ -34,7 +35,7 @@ form.addEventListener("submit", function(event) {
     document.getElementById("output").innerText =
         "✅ Welcome " + name + "! Your registration is successful.";
 
-    console.log({name, email, phone, dob, gender, course});
+    console.log({name, email, phone, dob, gender, course,skill});
 });
 // Adding event listner
 let btn2 = document.querySelector("button");
@@ -54,7 +55,6 @@ input.addEventListener("keyup",function (){
     console.log("the key was realesed!")
 });
 
-
 //para color changes when u click after filling the form
 let pera1 = document.querySelector("p");
 
@@ -62,4 +62,6 @@ pera1.addEventListener("click", function(){
     console.log(this.style.color = "red");
     console.log("you changed the color my clicking the para after filling the form")
 })
+
+
 
