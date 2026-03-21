@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
+    background: rgb(106, 84, 84);
     margin: 0;
 }
 
@@ -10,7 +10,7 @@ body {
     background: white;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 55px rgba(221, 15, 15, 0.2);
 }
 
 h2 {
