@@ -48,7 +48,7 @@ btn2.addEventListener("click", function (){
 let input = document.querySelector("input");
 
 input.addEventListener("keydown",function (){
-    console.log("the key was pressed!")
+    console.log("The key was pressed!")
 });
 
 input.addEventListener("keyup",function (){
@@ -61,7 +61,25 @@ let pera1 = document.querySelector("p");
 pera1.addEventListener("click", function(){
     console.log(this.style.color = "red");
     console.log("you changed the color my clicking the para after filling the form")
-})
+});
 
 
+let form1 = document.querySelector("form");
 
+form1.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let user = {
+        name: document.getElementById("name").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        phone: document.getElementById("phone").value.trim(),
+        dob: document.getElementById("dob").value,
+        gender: document.getElementById("gender").value,
+        course: document.getElementById("course").value,
+        skill: document.getElementById("skill").value.trim()
+    };
+
+    console.log(user);
+
+    alert(`Hi ${user.name}, your number is ${user.phone}`);
+});
